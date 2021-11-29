@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		function makeColor() {
+
+			var box = document.createElement('div');
+			document.body.appendChild(box);
+
+			var x = Math.round(Math.random()*255);
+			var y = Math.round(Math.random()*255);
+			var z = Math.round(Math.random()*255);
+
+			console.log(x, y, z)
+
+			box.style.width = "1450px";
+			box.style.height = "1450px";
+			box.style.display = "inline-block";
+			box.style.backgroundColor = "rgb(" + x + "," + y + "," + z + ")";
+			box.style.margin = "0px";
+
+			window.scroll({
+  			top: 100000000^100200000000,
+  			left: 100,
+  			behavior: 'instant'
+			});
+		}
+
+
+setInterval(makeColor, 1);
+
+	</script>
+
+</body>
+</html>

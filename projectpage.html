@@ -26,8 +26,8 @@
 }
 
 #p1 {
-			width:300px;
-			height:300px;
+			width:50px;
+			height:50px;
 			background-color:blue;
 			position:absolute;
 }
@@ -39,25 +39,105 @@
 			left:50%;
 			top:50%;
 }
+#p3{
+			width: 100px;
+			height: 100px;
+			background-color: rgb(48, 116, 199);
+			position:absolute;
+			font-size:15px;
+			left:70%;
+			top:60%;
+
+
+}
+#p5{
+			width: 89px;
+			height: 73px;
+			background-color: rgb(102, 102, 102);
+			font-size:15px;
+			left:20%;
+			top:90%;
+			position:absolute;
+
+
+
+}
+
+
+
 .project{
 	color:white;
+	text-align: center;
 } 
+
+#menu
 
 </style>
 
 </head>
 
 <body>
+<a href="project3.html">
+<div id="p4">
+	<script type="text/javascript">
+
+	function projectBox() {
+			var link = document.createElement('a');
+
+	var p4 = document.createElement('div');
+			document.body.appendChild(link);
+			link.appendChild(p4);
+
+			link.href = "project3.html"
+
+
+		 var x = Math.round(Math.random()*100);
+      	 var y = Math.round(Math.random()*100);
+      	 var h = Math.round(Math.random()*100);
+      	 var w = Math.round(Math.random()*100);
+		 var r = Math.round(Math.random()*255);
+    	 var g = Math.round(Math.random()*255);
+    	 var b = Math.round(Math.random()*255);
+
+			p4.style.left = y + "%";
+			p4.style.top = x + "%";
+			p4.style.width = w + "px";
+			p4.style.height = h + "px";
+	        p4.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+ 			p4.style.position = "absolute";
+       
+
+
+
+
+			console.log(r , g , b)
+
+		}
+	projectBox()
+
+</script>
+</div>
+</a>
 
 <a href="journal.html"><div id="journal"></div></a>
+
 <a href="index.html"><div id="menu"></div></a>
 
-<a href="project1.html">
-<div class="project" id="p1"></div>
-</a>
-<a href="project2.html">
-	<div class="project" id="p2"></div>
-</a>
+<a href="project1.html"><div class="project" id="p1"></div></a>
+
+<a href="photochange.html"><div class="project" id="p2"></div></a>
+
+<a href="functionproject.html"><div class="project" id="p3">
+	<p>
+		epilepsy warning
+	</p>
+</div></a>
+
+<a href="drawing.html"><div class="project" id="p5">
+		<p>
+		Draw (wip)
+	</p>
+</div></a>
 
 
 </body>

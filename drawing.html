@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Click an image</title>
+</head>
+<style type="text/css">
+#read{
+	width: 200px;
+	height: 90px ;
+	top:100px;
+	background-color:rgb(255,255,255);
+	margin: auto;
+	position: center;
+	font-size:20px;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	text-align: center;
+
+}
+
+#menu{
+			height:20px; 
+			width:1%;
+			background-color:rgb(81, 107, 122 );
+			position:relative;
+			font-size:20px ;
+			text-decoration:none;
+			color:black;
+		}
+
+</style>
+
+<body>
+
+
+
+
+	<script type="text/javascript">
+		function makeDraw(){
+			var draw = document.createElement("div");
+			document.body.appendChild(draw);
+			draw.style.height = "7px";
+			draw.style.width = "7px";
+			draw.style.display = "inline-block";
+			draw.style.backgroundImage = "url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2048px-Solid_white.svg.png)";
+			draw.style.backgroundSize = "contain";
+			draw.style.backgroundRepeat = "no-repeat";
+			draw.style.padding = "0";
+			draw.style.margin = "0px";
+
+			draw.addEventListener("mouseover", function(){
+				draw.style.height = "7px"
+				draw.style.width = "7px"
+				draw.style.display = "inline-block";
+				draw.style.backgroundImage = "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/AAAZ4gk3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC)";
+				draw.style.backgroundSize = "contain";
+				draw.style.backgroundRepeat = "no-repeat";
+				draw.style.padding = "0";
+				draw.style.margin = "0px";
+			})
+			}
+			setInterval(makeDraw, 1);
+
+	</script>
+<div id="read"> Wait 60 seconds for page to be full of divs.</div>
+<div id="journal">
+		<a href="projectpage.html">Back</a></div>
+
+</body>
+</html>
